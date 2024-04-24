@@ -5,15 +5,31 @@ body {
   }
   
   header {
-    background: grey;
-    padding: 2rem;
+    background: grey;    
     grid-column: 1 / 4;
   }
   nav {
-    background-color: black;
-    text-align: center;
+    background-color: black; 
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     
-    grid-column: 1 / 4;
+  }
+
+  nav li {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  nav a:hover {
+    border: 1px solid #fff;
   }
 
 
