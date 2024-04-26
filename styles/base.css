@@ -1,44 +1,99 @@
-
 body {
-    display: grid;
-    height: 100vh;
-    grid-template: auto 1fr auto / 300px 1fr auto;
-  }
-  
-  header {
-    background: grey;
-    padding: 2rem;
-    grid-column: 1 / 4;
-  }
-  nav {
-    background-color: black;
-    text-align: center;
-    
-    grid-column: 1 / 4;
-  }
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: auto 1fr auto;
+  /* Adjusted grid template columns */
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: block;
+  text-align: center;
+  background: grey;
+  padding: 10px;
+  grid-column: 1 / 4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: blue;
+}
+
+footer {
+  background: grey;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+.card {
+
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
 
 
-  Main {
-    background: lightgrey;
-    grid-column: 1 / 3;
-    padding: 1rem;
-  }
-  
-  .Aside {
-    background: white;
-    grid-column: 3 / 4;
-    padding: 1rem;
-  }
-  img {
-    height: 500px;
-    margin: 100px;
-    
-    
-    }
-  footer {
-    background: grey;
-    padding: 2rem;
-    text-align: center;
-    grid-column: 1 / 4;
-  }
-  
+img {
+  height: 400px;
+  width: 300px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-content figure {
+  height: 400px;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-content figure {
+  margin-right: 20px;
+}
+
+
+
+.side-content {
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+}
