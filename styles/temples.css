@@ -1,9 +1,14 @@
-
+* {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 header {
     display: grid;
     grid-gap: 1rem;
     padding: 15px;
     background-color: lightskyblue;
+    font-size: 24px;
 }
 header h1 {
     grid-column: 1/2;
@@ -46,7 +51,7 @@ ul li {
 
 
 nav a:hover {
-    background-color: blue;
+    background-color: darkblue;
     color: white;
 }
 
@@ -55,8 +60,8 @@ nav a:hover {
 }
 
 main {
-    max-width: 500px;
-    margin: 1rem auto;
+    max-width: 600px;
+    margin: 1rem auto;    
     padding: 10px;
 }
 
@@ -67,7 +72,7 @@ h2 {
     padding: 25px;
 }
 
-.container {
+.main-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 25px;
@@ -89,9 +94,11 @@ figcaption {
 
 footer {
     display: grid;
+    
     justify-content: center;
     background-color: lightskyblue;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
+    
 }

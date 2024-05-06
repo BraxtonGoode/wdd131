@@ -10,11 +10,11 @@ currentyear.innerHTML = `${today.getFullYear()}`;
 lastModified.innerHTML = `Last Modification: ${lastMod}`;
 // ---------------------------------------------------------
 
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation')
+const hamMenuButton = document.querySelector('#menu');
+const navigation = document.querySelector('.nav')
 
-hamButton.addEventListener('click', () => {
+hamMenuButton.addEventListener('click', () => {
     navigation.classList.toggle('show')
-    hamButton.classList.toggle('show')
+    hamMenuButton.classList.toggle('show')
 }
 )
