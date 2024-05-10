@@ -1,0 +1,61 @@
+/* larger viewpoint */
+@media screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero img {
+        max-width: 100%;
+       
+    }
+
+    .data {
+        background-color: black;
+        color: var(--backColor);
+        position: absolute;
+        top: 100px; 
+        left: 20px; 
+    }
+
+    .weather {
+        background-color: black;
+        color: var(--backColor);
+        position: absolute;
+        top: 300px; 
+        right: 20px; 
+    }
+}
+
+
+/* smaller viewpoint */
+@media screen and (max-width: 999px) {
+    main {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+    }
+    .hero img {
+        max-width: 100%; 
+    }
+
+    
+    .data,
+    .weather {
+        position: static; 
+        background-color: grey; 
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px 0; 
+        text-align: center; 
+        width: 100%; 
+        
+    }
+    table {
+        margin: 0 auto;
+    }
+    
+}

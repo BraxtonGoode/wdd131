@@ -1,53 +1,21 @@
-/* larger viewpoint */
-@media screen and (min-width: 1000px) {
-    .data {
-        position: absolute;
-        top: 20px; /* adjust as needed */
-        left: 20px; /* adjust as needed */
-    }
 
-    .weather {
-        position: absolute;
-        top: 20px; /* adjust as needed */
-        right: 20px; /* adjust as needed */
-    }
-}
-
-/* smaller viewpoint */
-@media screen and (max-width: 700px) {
-    .hero img {
-        max-width: 100%; 
-    }
-
-    /* Adjust positioning for smaller viewpoints */
-    .data,
-    .weather {
-        position: static; /* Reset positioning */
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-        color: white;
-        font-size: 18px;
-        padding: 10px;
-        margin: 10px 0; /* Add margin to separate elements */
-        text-align: center; /* Center text */
-        width: 100%; /* Take full width */
-    }
-}
-
-/* Additional styles */
 :root {
     --backColor: orange;
 }
 
 * {
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
     display: grid;
-    min-height: 100vh; /* Ensure the body takes up at least the height of the viewport */
-    margin: 0; /* Remove default margin */
+    min-height: 100vh; 
+    margin: 0;
 }
 
 header,
@@ -58,10 +26,24 @@ footer {
 
 main {
     position: relative;
-}
 
+}
+h2 {
+    text-align: center;
+}
 .hero img {
+    
     display: block;
     height: auto;
     width: 100%;
+}
+
+table {
+    margin: 20px;
+}
+th {
+    text-align: left;
+}
+td {
+    text-align: right;
 }
