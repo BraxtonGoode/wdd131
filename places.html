@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona</title>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <Header>
+        <h1>Arizona</h1>
+    </Header>
+    <main>
+        <div class="hero">
+            <picture>
+              <source srcset="images/grandcanyon-large.webp" media="(min-width: 1000px)">
+              <source srcset="images/grandcanyon-medium.webp" media="(min-width: 500px)">
+              <img srcset="images/grandcanyon-small.webp" alt="Grand Canyon" width="500px">
+            </picture>
+          </div>
+        <div class="data">
+            <h2>Data</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="label">Area: </th>
+                        <td class="input">114,006</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Population: </th>
+                        <td class="input">7.29 Million</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Capital: </th>
+                        <td class="input">Phoenix</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Languages: </th>
+                        <td class="input">English,Spanish</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Currency: </th>
+                        <td class="input">U.S. Dollar</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Time Zone: </th>
+                        <td class="input">Mountain Standard Time</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Calling Code: </th>
+                        <td class="input">+480</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Internet TLD: </th>
+                        <td class="input">.us</td>                        
+                    </tr>
+                </tbody>   
+            </table>
+        </div>
+        <div class="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="" alt="" >
+            </div>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="label">Temperature: </th>
+                        <td class="input">83 F</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Conditions: </th>
+                        <td class="input"> Sunny</td>
+                    </tr>
+                    <tr>
+                        <th class="label">Wind: </th>
+                        <td class="input">13mph</td>
+                    </tr>            
+                    <tr>
+                        <th class="label">Wind Chill: </th>
+                        <td id="windChill" class="input"></td>
+                    </tr>        
+
+                </tbody>
+            </table>
+        </div>
+        
+
+    </main>
+    <footer>
+        <p>@ <span id="currentyear"></span> 🖥️ Braxton Goode 🖥️ Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
