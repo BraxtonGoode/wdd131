@@ -1,6 +1,9 @@
 
 :root {
     --backColor: orange;
+    --textColor:black;
+    --boxBackColor:black;
+    --boxTextColor:orange;
 }
 
 * {

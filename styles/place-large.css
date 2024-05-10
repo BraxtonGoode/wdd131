@@ -12,8 +12,8 @@
     }
 
     .data {
-        background-color: black;
-        color: var(--backColor);
+        background-color: var(--boxBackColor);
+        color: var(--boxTextColor);
         position: absolute;
         top: 100px; 
         left: 20px; 
@@ -26,6 +26,14 @@
         top: 300px; 
         right: 20px; 
     }
+
+    #sunny {
+        display: none;
+    }
+    .weather h2::after {
+        content: "☀️";
+    }
+
 }
 
 
@@ -37,6 +45,7 @@
         align-items: center; 
         flex-direction: column; 
     }
+
     .hero img {
         max-width: 100%; 
     }
@@ -45,17 +54,30 @@
     .data,
     .weather {
         position: static; 
-        background-color: grey; 
-        color: white;
+        background-color: var(--boxBackColor); 
+        color: var(--boxTextColor);
         font-size: 18px;
         padding: 10px;
         margin: 10px 0; 
         text-align: center; 
         width: 100%; 
+        max-width: 80%;
         
     }
-    table {
+
+   
+
+    .data-container, .weather-container {
+        max-width: 100%;
+        
+    }
+
+    .data-container table, .weather-container table {
+        
         margin: 0 auto;
     }
+
+
+
     
 }
