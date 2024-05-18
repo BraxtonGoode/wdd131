@@ -1,0 +1,203 @@
+:root {
+    --backgroundColor: lightgrey;
+    --standoutColor: brown;
+    --headerBackgroundColor: #333;
+    --headerTextColor: #fff;
+    --footerBackgroundColor: #222;
+    --footerTextColor: #fff;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--backgroundColor);
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--headerBackgroundColor);
+    color: var(--headerTextColor);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background: none; /* Remove button background */
+    color: var(--headerTextColor);
+    border: none;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.show::before {
+    content: '✖'; /* Changed to a cross for better UX */
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--headerTextColor);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.show a {
+    display: block;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--standoutColor);
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about-me p {
+    margin: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-me figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Latest-Project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+}
+
+.Latest-Project h3 {
+    margin-bottom: 1rem;
+}
+
+.Latest-Project figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Latest-Project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Latest-Project p {
+    margin: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    .about-me {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .Latest-Project p {
+        text-align: center;
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: var(--footerBackgroundColor);
+    color: var(--footerTextColor);
+    padding: 1rem;
+    border-top: 2px solid var(--standoutColor); /* Optional: Add a top border */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

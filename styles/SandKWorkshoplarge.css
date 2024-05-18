@@ -1,0 +1,38 @@
+@media screen and (min-width: 1000px)
+{
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;    
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    nav ul {
+        margin: 0;
+        text-align: center;
+    }
+    nav a {
+        display: block;
+    }
+    li {
+        display: inline-block;
+    }
+
+    
+}
+@media screen and (min-width: 700px)
+{
+    header {
+        display: grid;
+        padding: 15px;
+    }
+
+  
+    main {
+        max-width: 100%;
+    }
+
+}
