@@ -34,5 +34,29 @@
     main {
         max-width: 100%;
     }
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
 
+    nav a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    
+}
+
+@media (max-width: 599px) {
+    .about-me {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .Latest-Project p {
+        text-align: center;
+    }
 }
