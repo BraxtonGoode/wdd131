@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Braxton Goode">
+    <meta name="description" content="WDD131 week 5 project to create a Product Review form">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <legend>Product Name</legend> 
+                <select name="productN" id="productN" required>
+                    <option value selected disabled>Select a Product</option>                
+                </select>    
+            </fieldset>
+            <fieldset>
+                <legend> Overall Rating</legend>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <input type="date" id="installD" name="installD" required>
+            </fieldset>
+            <fieldset>
+                <legend>Which feature did you find useful in the product?</legend>
+                <div>
+                    <label>(Check all that apply)</label>
+                </div>
+                    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>            
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                    <textarea id="textarea" name="textarea"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name (optional)</legend>
+                <input type="text" id="textN" name="textN">
+            </fieldset>
+            <input type="submit" value="Post Review">
+
+
+        </form>
+       
+
+
+    </main>
+    <footer>
+        <p>@ <span id="currentyear"></span> 🖥️ Braxton Goode 🖥️ Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
