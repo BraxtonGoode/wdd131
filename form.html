@@ -15,61 +15,66 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <div class=".main-container">
-        <form method="get" action="review.html" class="wf1">
-            <fieldset>
-                <legend>Product Name </legend> 
-                <select name="productN" id="productN" required>
-                    <option value="" selected disabled>Select a Product &#9662;</option>                
-                </select>    
-            </fieldset>
-            <fieldset>
-                <legend> Overall Rating</legend>
-                <div class="stars" >
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar" aria-label="1 stars"> ⭐</label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar" aria-label="2 stars"> ⭐⭐</label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar" aria-label="3 stars"> ⭐⭐⭐</label>
-
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar" aria-label="4 stars"> ⭐⭐⭐⭐</label>
-                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar" aria-label="5 stars"> ⭐⭐⭐⭐⭐</label>
-
-
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Date of Installation</legend>
-                <input type="date" id="installD" name="installD" required>
-            </fieldset>
-            <fieldset>
-                <legend>Which feature did you find useful in the product?</legend>
-                <div>
-                    <label>(Check all that apply)</label>
-                </div>
-                    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                    <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
-                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
-                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>            
-            </fieldset>
-            <fieldset>
-                <legend>Written Review (optional)</legend>
-                    <label><textarea id="textarea" name="textarea"></textarea></label>
-            </fieldset>
-            <fieldset>
-                <legend>Your Name (optional)</legend>
-                <Label><input type="text" id="textN" name="textN"></Label>
-            </fieldset>
-            <input type="submit" value="Post Review">
-
-
-        </form>
-       </div>
-
-
+        <div class="main-container">
+            <form method="get" action="review.html" class="wf1">
+                <fieldset>
+                    <legend>Product Name</legend> 
+                    <label for="productN">Select a Product:</label>
+                    <select name="productN" id="productN" required>
+                        <option value="" selected disabled>Select a Product &#9662;</option>                
+                    </select>    
+                </fieldset>
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="stars">
+                        <input type="radio" id="onestar" name="stars" value="1" required>
+                        <label for="onestar" aria-label="1 star">⭐</label>
+                        
+                        <input type="radio" id="twostar" name="stars" value="2" required>
+                        <label for="twostar" aria-label="2 stars">⭐⭐</label>
+                        
+                        <input type="radio" id="threestar" name="stars" value="3" required>
+                        <label for="threestar" aria-label="3 stars">⭐⭐⭐</label>
+                        
+                        <input type="radio" id="fourstar" name="stars" value="4" required>
+                        <label for="fourstar" aria-label="4 stars">⭐⭐⭐⭐</label>
+                        
+                        <input type="radio" id="fivestar" name="stars" value="5" required>
+                        <label for="fivestar" aria-label="5 stars">⭐⭐⭐⭐⭐</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Date of Installation</legend>
+                    <label for="installD">Date:</label>
+                    <input type="date" id="installD" name="installD" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Which feature did you find useful in the product?</legend>
+                    <div>
+                        <label>(Check all that apply)</label>
+                    </div>
+                    <label for="durability"><input type="checkbox" id="durability" name="features" value="durability">Durability</label>
+                    <label for="ease"><input type="checkbox" id="ease" name="features" value="ease">Ease of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="features" value="performance">Performance</label>
+                    <label for="design"><input type="checkbox" id="design" name="features" value="design">Design</label>            
+                </fieldset>
+                <fieldset>
+                    <legend>Written Review (optional)</legend>
+                    <label for="textarea">Your Review:</label>
+                    <textarea id="textarea" name="textarea"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Name (optional)</legend>
+                    <label for="textN">Name:</label>
+                    <input type="text" id="textN" name="textN">
+                </fieldset>
+                <input type="submit" value="Post Review">
+            </form>
+        </div>
     </main>
     <footer>
         <p>@ <span id="currentyear"></span> 🖥️ Braxton Goode 🖥️ Arizona</p>
         <p id="lastModified"></p>
     </footer>
-    
 </body>
 </html>
