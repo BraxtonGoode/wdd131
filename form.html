@@ -8,6 +8,7 @@
     <meta name="description" content="WDD131 week 5 project to create a Product Review form">
     <link href="styles/form.css" rel="stylesheet">
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,11 +26,11 @@
             <fieldset>
                 <legend> Overall Rating</legend>
                 <div class="stars" >
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"aria-label="1 stars"> ⭐</label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"aria-label="2 stars"> ⭐⭐</label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"aria-label="3 stars"> ⭐⭐⭐</label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar" aria-label="1 stars"> ⭐</label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar" aria-label="2 stars"> ⭐⭐</label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar" aria-label="3 stars"> ⭐⭐⭐</label>
 
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"aria-label="4 stars"> ⭐⭐⭐⭐</label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar" aria-label="4 stars"> ⭐⭐⭐⭐</label>
                     <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar" aria-label="5 stars"> ⭐⭐⭐⭐⭐</label>
 
 
@@ -51,11 +52,11 @@
             </fieldset>
             <fieldset>
                 <legend>Written Review (optional)</legend>
-                    <textarea id="textarea" name="textarea"></textarea>
+                    <label><textarea id="textarea" name="textarea"></textarea></label>
             </fieldset>
             <fieldset>
                 <legend>Your Name (optional)</legend>
-                <input type="text" id="textN" name="textN">
+                <Label><input type="text" id="textN" name="textN"></Label>
             </fieldset>
             <input type="submit" value="Post Review">
 
