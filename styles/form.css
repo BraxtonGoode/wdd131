@@ -1,16 +1,41 @@
+:root {
+    --backgroundColor:#CCCCCC;
+    --textColor:#006400;
+}
+body {
+    width: 100%;
+}
+
 h1 {
-    background-color: #5F388C;
+    background-color:var(--backgroundColor);
     text-align: center;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+}
 .wf1 {
-    background-color: #EDE3FF;    
-    max-width: 500px;
+    background-color: var(--backgroundColor);
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px; 
+   
 }
 .wf1 fieldset {
     margin: 2rem 0;
     border: 1px solid black;
     border-radius: 6px;
-    padding: .5rem 2%;
+    padding: .5rem;
+    width: 96%;
+    max-width: 500px;
+
 }
 
 
@@ -27,41 +52,53 @@ h1 {
 
 .wf1 div {
     padding-top: 1rem;
-    color: blue;
+    color: black;
     font-size: .9rem;
 }
 
 
 .wf1 input[type="text"],
 .wf1 input[type="date"],
-.wf1 select {
-    background-color: white;
+.wf1 select{
+    background-color: var(--backgroundColor);
     display: block;
     border: solid 1px #999;
     padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 450px;
+    color: var(--textColor);
+    width: 90%;
     border-radius: 6px;
     appearance: none;
+    margin: 10px;
 }
 
-.wf1 input[type="radio"],
+.wf1 textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 150px; 
+    max-height: 200px;
+    resize: vertical; 
+    box-sizing: border-box; 
+}
+
+
 .wf1 input[type="checkbox"] {
     margin: 6px;
+}
+.stars{
+    display: flex;
 }
 
 
 .wf1 input[type="submit"]{
     border-radius: 6px;
-    background-image: linear-gradient(grey, lightblue);
+    background-image: linear-gradient(var(--backgroundColor), var(--textColor));
     width: 96%;
     max-width: 400px;
     padding: .8rem;
-    margin: -1rem 2% 2rem 2%;
+    margin: -1rem 2% 1rem 2% ;
 }
 
-
+.wf1 select:required,
 .wf1 input:required {
     border-left: 8px solid red;
 }
@@ -72,13 +109,30 @@ h1 {
 }
 
 
+/* ---------------------reviewPage--------------------------------- */
+.postedReview {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.postedReview h3{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
 
+}
+.postedReview p{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    text-align: center;
 
+}
+/* ------------------------------Footer--------------------------------- */
 footer {
     display: grid;
     
     justify-content: center;
-    background-color: #5F388C;
+    background-color: var(--backgroundColor);
     width: 100%;
     padding: 10px;
     margin-top: 10px;
