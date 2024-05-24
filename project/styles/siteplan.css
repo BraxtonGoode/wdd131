@@ -1,0 +1,97 @@
+:root {
+    --backgroundColor: #d3d3d3;
+    --standoutColor: #a52a2a;
+    --textColor: #000000;
+    --headerBackgroundColor: #222222;
+    --headerTextColor: #ffffff;
+    --footerBackgroundColor: #222222;
+    --footerTextColor: #ffffff;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--backgroundColor);
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--headerBackgroundColor);
+    color: var(--headerTextColor);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border-radius: 8px; /* Optional: Add rounded corners */
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+ul li {
+    list-style-type: none;
+    text-align: center;
+    padding: 7PX;
+}
+
+/* Main Styles */
+main {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    font-weight: 300;
+}
+div {
+    padding: 20px;
+}
+p {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: var(--standoutColor);
+}
+.fonts h1, .fonts h2{
+    color: var(--textColor);
+}
+
+.typography {
+    text-align: center;
+    padding: 10px;
+}
+.typography h1, .typography h2, .typography p {
+    padding: 10px;
+}
+
+.wireframe {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: var(--footerBackgroundColor);
+    color: var(--footerTextColor);
+    padding: 1rem;
+    border-top: 2px solid var(--standoutColor);
+    font-weight: 500;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

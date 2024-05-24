@@ -1,10 +1,10 @@
 :root {
-    --backgroundColor: lightgrey;
-    --standoutColor: brown;
-    --headerBackgroundColor: #333;
-    --headerTextColor: #fff;
-    --footerBackgroundColor: #222;
-    --footerTextColor: #fff;
+    --backgroundColor: #d3d3d3;
+    --standoutColor: #a52a2a;
+    --headerBackgroundColor: #222222;
+    --headerTextColor: #ffffff;
+    --footerBackgroundColor: #222222;
+    --footerTextColor: #ffffff;
 }
 
 /* Global Styles */
@@ -17,7 +17,7 @@
 html, body {
     height: 100%;
     background-color: var(--backgroundColor);
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -33,11 +33,13 @@ header {
     text-align: center;
     position: relative;
     border-radius: 8px; /* Optional: Add rounded corners */
+
 }
 
 header h1 {
     margin: 0;
     font-size: 2rem;
+    font-weight: 500;
 }
 
 #menu {
@@ -98,6 +100,7 @@ main {
     flex-grow: 1;
     grid-gap: 1rem;
     padding: 1rem;
+    font-weight: 300;
 }
 
 h2 {
@@ -161,6 +164,7 @@ footer {
     color: var(--footerTextColor);
     padding: 1rem;
     border-top: 2px solid var(--standoutColor);
+    font-weight: 500;
 }
 
 footer p {
