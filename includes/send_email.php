@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     mail($to, $subject, $email_content);
 
     // Redirect user to a thank you page
-    header("Location: WDD131/Contacted.html");
+    header("Location: wdd131/Contacted.html");
     exit();
 }
 ?>
