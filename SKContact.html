@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project - SandKWorkshop</title>
+    <title>Contact Page</title>
     <meta name="author" content="Braxton Goode">
     <meta name="description" content="WDD131 Final project assignment, Featuring 3 pages first is a home page describing what the channel it is featuring is about and latest project, second is Projects that have been completed and where you can videos on it, third is a contact form that you can fill out.">
     <link href="styles/SandKWorkshop.css" rel="stylesheet">
     <link href="styles/SandKWorkshoplarge.css" rel="stylesheet">
     <Script src="scripts/SandKWorkshop.js" defer></Script>
+    <script src="scripts/SKForm.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
@@ -26,31 +27,27 @@
         </nav>
     </header>
     <main>
-        <div class="first-container">
-            <h2>About Me</h2>
-            <div class="about-me">
-                <figure>
-                    <img src="images/Logo.png" alt="SandKWorkshop Logo" width="300px" loading="lazy">
-                </figure>
-                <p>S is for someone and K is for Kevin. We work, we fix, we make, we play, and eat. It's a Family Thing! <br>
-
-                    We have many projects that we will soon get on. The fun is watching our mistakes. <br>
-                    
-                    We are not the most skilled people in the world but we are determined.
-                </p>
-            </div>
+        <h2>Contact</h2>
+        <div class="social-media">
+            <h3>Social Medias</h3>
+            <a href="https://www.youtube.com/@sandkworkshop"><img src="images/YT.webp" alt="YouTube" width="60px"></a>
+            <a href="https://www.youtube.com/@sandkworkshop"><img src="images/FaceBook.webp" alt="YouTube" width="60px"></a>
         </div>
-        <div class="second-container">
-            <h2>Latest Project</h2>
-            <div class="Latest-Project">
-                <h3>Scrap Pile Revival</h3>
-                <iframe width="475" height="350" src="https://www.youtube.com/embed/n_qc9k_C9Ek?si=18R9IAB612vOgqky" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <p>
-                    We took on the challenge of creating a new botle cage from an old piece of scrap. Watch as i make this project my own!                    
-                </p>                
-            </div>
-
+        <div class="contact-container">
+            <form action="Contacted.html" method="get">
+                <fieldset class="contact">
+                    <legend>Contact Us </legend>
+                    <label for="name">Your Name: <input type="text" id="name" required></label>
+                    <label for="email">Your Email: <input type="email" id="email" required></label>                 
+                    <label for="textarea"> Your Message:</label>
+                    <textarea id="textarea" name="textarea" rows="7"></textarea>  
+                    <input type="submit" value="Send Message">
+                </fieldset>
+                
+                
+            </form>
         </div>
+
     </main>
     <footer>
         <p>@ <span id="currentyear"></span> Created by Braxton Goode for S and K Workshop</p>

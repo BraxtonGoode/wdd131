@@ -62,7 +62,7 @@ header h1 {
 }
 
 #menu.show::before {
-    content: '✖'; /* Changed to a cross for better UX */
+    content: '✖'; 
 }
 
 nav {
@@ -169,4 +169,99 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+/* Projects Page */
+
+.project {
+    border: 5px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project h3 {
+    text-align: center;
+    grid-column: 1 / -1; /* Span across all columns */
+}
+
+.project-div {
+    display: grid;  
+    grid-column: 1 / -1;  
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-div iframe {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.project-div p {
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+}
+/* Contact Page */
+.social-media {
+    text-align: center;
+    padding: 10px;
+}
+.social-media h3{
+    padding: 15px;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; 
+}
+
+form {
+    max-width: 400px; 
+    width: 100%;
+}
+
+fieldset {
+    max-width: 100%; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--headerBackgroundColor);
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+input[type="submit"]{
+    padding: 4px;
+    background-color: var(--backgroundColor);
+    color: var(--standoutColor);
+}
+/* Contacted Page */
+.messages-sent {
+    text-align: center;
+    padding: 10px;
+}
+.messages-sent p{
+    text-align: center;
+    padding: 20px;
 }
