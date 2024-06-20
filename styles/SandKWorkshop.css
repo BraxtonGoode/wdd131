@@ -209,7 +209,13 @@ footer p {
 .social-media h3{
     padding: 15px;
 }
-.contact-container {
+.social-media a{
+    padding: 15px;
+}
+
+
+
+/* .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,8 +261,12 @@ input[type="submit"]{
     padding: 4px;
     background-color: var(--backgroundColor);
     color: var(--standoutColor);
-}
-/* Contacted Page */
+} */
+
+
+
+
+/* Contacted Page
 .messages-sent {
     text-align: center;
     padding: 10px;
@@ -264,4 +274,4 @@ input[type="submit"]{
 .messages-sent p{
     text-align: center;
     padding: 20px;
-}
+} */
